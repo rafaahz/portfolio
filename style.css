@@ -1,0 +1,286 @@
+
+/*
+
+    #333333
+    #242424
+    #f2f2f2
+    #e6e6e6
+
+
+    #00ffff
+    #00b2b3
+    #006666
+
+*/
+
+/* cssgradient.io */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+}
+body{
+    
+}
+.linha{
+    position: fixed;
+    width: 5000px;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(0,178,179,1) 19%, rgba(10,124,124,1) 41%, rgba(8,96,96,1) 64%, rgba(8,70,70,1) 85%);
+    top: 0;
+    left: -180px;
+    z-index: 1;
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+}
+#linha2{
+    width: 50px;
+    height: 5000px;
+    background: linear-gradient(90deg, rgba(0,255,255,1) 19%, rgba(0,178,179,1) 70%);
+    transform: rotate(-10deg) translate(700px, -100px);
+    -webkit-transform: rotate(-10deg) translate(700px, -100px);
+    -moz-transform: rotate(-10deg) translate(700px, -100px);
+    -ms-transform: rotate(-10deg) translate(700px, -100px);
+    -o-transform: rotate(-10deg) translate(700px, -100px);
+    z-index: 0;
+}
+.h1{
+    font-size: 30px;
+}
+.h3{
+    font-size: 20px;
+}
+.paragrafo{
+    margin: 10px 0px 10px 0px;
+    font-size: 20px;
+}
+
+.container{
+    padding: 15px;
+    background: radial-gradient(circle, rgba(25,25,25,1) 36%, rgba(25,24,24,1) 69%);
+    color: #dfe2db;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.sombra{
+    width: 80%;
+    padding: 3px;
+    background-color: #323236;
+    margin: 20px 0px 20px 0px;
+    z-index: 1;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: -webkit-fill-available;
+    padding: 50px;
+    background-color: #242424;
+    z-index: 3;
+}
+.linkGit{
+    margin-left: 20px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #dfe2db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #00ffff;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+.linkGit:hover > #github{
+    fill: #dfe2db;
+}
+.linkGit:hover{
+    background-color: #1a1a1a;
+    color: #00ffff;
+}
+#github{
+    transition: all 0.5s;
+    padding: 10px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.box-sobre{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.titulo{
+    font-size: 70px;
+}
+
+.sub-titulo{
+    font-size: 35px;
+    color: #00ffff;
+    margin-left: 20px;
+}
+
+.img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img::after, .img::before{
+    display: block;
+    font-size: 60px;
+    font-family: 'Nanum Gothic', sans-serif;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.img::before{
+    content: "<";
+    transform: translate(-10%, -140%) rotate(32deg);
+    -webkit-transform: translate(-10%, -140%) rotate(32deg);
+    -moz-transform: translate(-10%, -140%) rotate(32deg);
+    -ms-transform: translate(-10%, -140%) rotate(32deg);
+    -o-transform: translate(-10%, -140%) rotate(32deg);
+}
+.img::after{
+    content: ">";
+    transform: translate(10%, 140%) rotate(32deg);
+    -webkit-transform: translate(10%, 140%) rotate(32deg);
+    -moz-transform: translate(10%, 140%) rotate(32deg);
+    -ms-transform: translate(10%, 140%) rotate(32deg);
+    -o-transform: translate(10%, 140%) rotate(32deg);
+}
+.img:hover::after{
+    transform: translate(-10%, -140%) rotate(-32deg);
+    -webkit-transform: translate(-10%, -140%) rotate(-32deg);
+    -moz-transform: translate(-10%, -140%) rotate(-32deg);
+    -ms-transform: translate(-10%, -140%) rotate(-32deg);
+    -o-transform: translate(-10%, -140%) rotate(-32deg);
+    color: #00ffff;
+}
+.img:hover::before{
+    transform: translate(10%, 140%) rotate(-32deg);
+    -webkit-transform: translate(10%, 140%) rotate(-32deg);
+    -moz-transform: translate(10%, 140%) rotate(-32deg);
+    -ms-transform: translate(10%, 140%) rotate(-32deg);
+    -o-transform: translate(10%, 140%) rotate(-32deg);
+    color: #00ffff;
+}
+
+
+.foto{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0px 0px 20px #838383;
+    transition: box-shadow 0.5s;
+    -webkit-transition: box-shadow 0.5s;
+    -moz-transition: box-shadow 0.5s;
+    -ms-transition: box-shadow 0.5s;
+    -o-transition: box-shadow 0.5s;
+}
+
+.foto:hover{
+    box-shadow: 0px 0px 17px #ffffff;
+}
+
+.projetos{
+    display: flex;
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.itemProjeto{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.imgProjeto{
+    width: -webkit-fill-available;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 15px;
+}
+.legendaProjeto{
+    text-align: center;
+}
+.linkProjeto{
+    width: 30%;
+    text-decoration: none;
+    color: #dfe2db;
+}
+
+@media (max-width: 780px) {
+    .box{
+        flex-direction: column;
+    }
+    .ola{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .titulo{
+        font-size: 40px;
+        text-align: center;
+    }
+    .sub-titulo{
+        font-size: 30px;
+        text-align: center;
+    }
+    .linkGit{
+        margin-left: 0px;
+    }
+    .sub-titulo{
+        margin-left: 0px;
+    }
+    .sombra{
+        width: 95%;
+    }
+    .paragrafo{
+        text-align: justify;
+    }
+    .projetos{
+        flex-direction: column;
+    }
+    .linkProjeto{
+        width: 100%;
+        margin: 15px;
+    }
+}
